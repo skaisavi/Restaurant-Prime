@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Chandlers Cross | Prime Steak & Grill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --gold: #C9A84C; --gold-light: #E8D5A3; --dark: #1A1209; --charcoal: #2C2318; --cream: #F9F4EC; }
+    body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--dark); }
+
+    nav { background: var(--dark); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .logo { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 18px; letter-spacing: 3px; text-decoration: none; font-weight: 500; }
+    .back-link { color: #e8e0d0; text-decoration: none; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 300; transition: color 0.2s; }
+    .back-link:hover { color: var(--gold); }
+
+    .hero { background: var(--dark); padding: clamp(3rem, 7vw, 5rem) 2rem; text-align: center; }
+    .eyebrow { font-size: 10px; letter-spacing: 4px; color: var(--gold-light); text-transform: uppercase; margin-bottom: 1rem; font-weight: 300; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 6vw, 52px); color: #fff; font-weight: 700; line-height: 1.2; }
+    .hero h1 em { color: var(--gold); font-style: italic; }
+    .divider { width: 40px; height: 1px; background: var(--gold); margin: 1.5rem auto 0; }
+
+    .content { display: grid; grid-template-columns: 1fr 1fr; }
+    .info { background: #fff; padding: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 2.5rem); }
+    .section-label { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 500; }
+    .info h2 { font-family: 'Playfair Display', serif; font-size: 26px; margin-bottom: 2rem; color: var(--dark); font-weight: 500; }
+    .detail-row { display: flex; gap: 1.25rem; margin-bottom: 1.5rem; align-items: flex-start; }
+    .detail-label { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #999; font-weight: 500; min-width: 65px; padding-top: 3px; }
+    .detail-value { font-size: 14px; color: #333; font-weight: 300; line-height: 1.8; }
+    .divider-line { width: 100%; height: 1px; background: #f0ece4; margin: 2rem 0; }
+    .book-btn { background: var(--gold); color: var(--dark); border: none; padding: 13px 32px; font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; font-weight: 600; transition: opacity 0.2s; }
+    .book-btn:hover { opacity: 0.85; }
+
+    .map-wrap { min-height: 500px; }
+    .map-wrap iframe { width: 100%; height: 100%; min-height: 500px; border: none; display: block; }
+
+    .other-locations { background: var(--dark); padding: 3rem 2rem; }
+    .other-locations h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 20px; text-align: center; margin-bottom: 1.5rem; font-weight: 500; }
+    .locations-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: rgba(201,168,76,0.12); }
+    .location-item { background: var(--charcoal); padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; text-decoration: none; transition: background 0.2s; }
+    .location-item:hover { background: #3a2e22; }
+    .location-name { font-family: 'Playfair Display', serif; color: #fff; font-size: 14px; }
+    .location-addr { font-size: 11px; color: #b0a090; margin-top: 3px; font-weight: 300; }
+    .location-arrow { color: var(--gold); font-size: 16px; }
+
+    footer { background: #111; padding: 1.75rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 14px; letter-spacing: 2px; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: #b0a898; text-decoration: none; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; }
+    .footer-copy { color: #888070; font-size: 10px; letter-spacing: 1px; }
+
+    @media (max-width: 600px) {
+      .content { grid-template-columns: 1fr; }
+      .map-wrap { min-height: 300px; }
+      .map-wrap iframe { min-height: 300px; }
+      footer { flex-direction: column; align-items: center; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">PRIME</a>
+    <a href="index.html" class="back-link">← All Restaurants</a>
+  </nav>
+
+  <div class="hero">
+    <p class="eyebrow">Our Restaurants</p>
+    <h1>Prime <em>Chandlers Cross</em></h1>
+    <div class="divider"></div>
+  </div>
+
+  <div class="content">
+    <div class="info">
+      <p class="section-label">Find us</p>
+      <h2>Chandlers Cross</h2>
+      <div class="detail-row">
+        <span class="detail-label">Address</span>
+        <span class="detail-value">The Clarendon, Redhall Lane<br>Chandler's Cross, Rickmansworth, WD3 4LU</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Phone</span>
+        <span class="detail-value">01923 000 000</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Hours</span>
+        <span class="detail-value">Mon–Fri: 12pm – 10pm<br>Saturday: 11am – 11pm<br>Sunday: 11am – 9pm</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Email</span>
+        <span class="detail-value">chandlerscross@primesteakandgrill.com</span>
+      </div>
+      <div class="divider-line"></div>
+      <button class="book-btn">Book a Table</button>
+    </div>
+
+    <div class="map-wrap">
+      <!-- To update: go to maps.google.com → search the restaurant → Share → Embed a map → copy the src URL -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.2!2d-0.4602712!3d51.672943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766a0fcf46b6d3%3A0xd42fb0f171a0859a!2sPrime%20Steak%20and%20Grill%20-%20Chandler's%20Cross!5e0!3m2!1sen!2suk!4v1"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="other-locations">
+    <h3>Other locations</h3>
+    <div class="locations-list">
+      <a href="st-albans.html" class="location-item">
+        <div><p class="location-name">St Albans</p><p class="location-addr">83–85 London Road, AL1 1LN</p></div>
+        <span class="location-arrow">→</span>
+      </a>
+      <a href="beaconsfield.html" class="location-item">
+        <div><p class="location-name">Beaconsfield</p><p class="location-addr">180–182 Maxwell Road, HP9 1QX</p></div>
+        <span class="location-arrow">→</span>
+      </a>
+      <a href="berkhamsted.html" class="location-item">
+        <div><p class="location-name">Berkhamsted</p><p class="location-addr">196 High Street, HP4 3BA</p></div>
+        <span class="location-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">PRIME</div>
+    <nav class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <p class="footer-copy">© 2026 Prime Steak & Grill</p>
+  </footer>
+
+</body>
+</html>
