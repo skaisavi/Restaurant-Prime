@@ -267,7 +267,7 @@ nav {
 }
 
 .section-label {
-  font-size: 9px;
+  font-size: 14px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gold);
@@ -553,6 +553,252 @@ footer {
   letter-spacing: 1px;
 }
 
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+
+.testimonials {
+  padding: 4rem 2rem;
+  background: var(--cream);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--charcoal);
+  font-size: 0.9rem;
+}
+
+.testimonial-author span {
+  color: #666;
+  font-weight: 400;
+}
+
+.testimonial-featured {
+  border: 2px solid var(--gold);
+  position: relative;
+}
+
+.testimonial-featured::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--gold);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.testimonial-press {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   FULL FOOTER
+   ============================================================ */
+
+.footer-full {
+  background: var(--dark);
+  color: white;
+}
+
+.footer-newsletter {
+  background: var(--charcoal);
+  padding: 3rem 2rem;
+}
+
+.footer-newsletter-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.footer-nl-heading {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  color: white;
+}
+
+.footer-nl-sub {
+  color: #ccc;
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.footer-nl-thanks {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.footer-nl-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nl-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #555;
+  background: transparent;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  min-width: 250px;
+}
+
+.footer-nl-input::placeholder {
+  color: #aaa;
+}
+
+.footer-nl-btn {
+  background: var(--gold);
+  color: var(--dark);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.footer-nl-btn:hover {
+  opacity: 0.9;
+}
+
+.footer-main {
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.footer-tagline {
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-link {
+  color: #ccc;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #555;
+  border-radius: 50%;
+}
+
+.footer-social-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col-heading {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links-col a {
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+  font-size: 0.9rem;
+}
+
+.footer-links-col a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  padding: 2rem;
+  text-align: right;
+}
+
+.footer-copy {
+  color: #666;
+  font-size: 0.9rem;
+  position: absolute;
+  right: 2rem;
+  margin: 0;
+}
 
 /* ============================================================
    RESTAURANT PAGE
@@ -734,6 +980,29 @@ footer {
   }
 
   .footer-links { justify-content: center; }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-newsletter-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
 
   .restaurant-content {
     grid-template-columns: 1fr;
