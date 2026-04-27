@@ -1,8 +1,0 @@
-{
-  "rootDirectory": "prime-react",
-  "buildCommand": "tsc -b && node node_modules/.bin/vite build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "framework": null
-}
