@@ -6,6 +6,7 @@ import { usePageTitle } from '../hooks/usePageTitle';
 import { menus } from '../data/menus';
 
 export default function MenusPage() {
+  usePageTitle('Menus');
   const [activeTab, setActiveTab] = useState(menus[0].id);
   const { openBooking } = useBooking();
   const tab = menus.find(m => m.id === activeTab)!;
